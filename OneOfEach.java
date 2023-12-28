@@ -1,10 +1,21 @@
-
-/**
- *  Simulates the formation of a family in which the parents decide 
- *  to have children until they have at least one child of each gender.
- */
-public class OneOfEach {
+class OneOfEach {
 	public static void main (String[] args) {
-		//// Put your code here
+		double b = Math.random();
+		double g = Math.random();
+		String s = "";
+		boolean boy = false;
+		boolean girl = false;
+		while (!(boy==true&&girl==true)) { 
+            if (b>g) { s = s +"b ";
+		b = Math.random();
+	    g = Math.random(); 
+		boy = true;
+	        }else{s = s + "g ";
+        b = Math.random();
+		g = Math.random(); 
+		girl = true;}}
+		int x = s.length()/2;
+		System.out.println(s);
+		System.out.println("you made it... and you now have " + x + " children.");
+       }
 	}
-}
