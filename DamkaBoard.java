@@ -1,18 +1,21 @@
 class DamkaBoard {
 	public static void main(String[] args) {
 		int a = Integer.parseInt(args[0]);
-		int b = a - 1;
 		String s = "";
-    while (a > 0) {
-		a = a - 1; s = s + "* ";
-	}
-	while (b >= 0) {
-		System.out.println(s); b = b - 1;
-		 if (b % 2 == 0) {
-			s = s.substring(1, s.length()-1);
+		for (int i = 0; i < a; i++) {
+			if (i<a-1) {
+			s = s + "* ";
 		} else {
-			s = " " + s;
+			s = s + "*";}
 		}
+	    for (int i = 0; i < a; i++) {
+			if (i % 2 == 0) {
+				System.out.println(s);
+			} else {
+				System.out.println( " " + s);
+			}
+			
+		}
+		
 	}	
-	}
-	}
+}
