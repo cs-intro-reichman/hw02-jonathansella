@@ -9,7 +9,7 @@ class DamkaBoard {
 	while (b >= 0) {
 		System.out.println(s); b = b - 1;
 		 if (b % 2 == 0) {
-			s = s.substring(1, s.length());
+			s = s.substring(1, s.length()-1);
 		} else {
 			s = " " + s;
 		}
