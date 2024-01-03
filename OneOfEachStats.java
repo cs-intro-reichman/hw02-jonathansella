@@ -17,21 +17,22 @@ public class OneOfEachStats {
 		int familywithtwo = 0;
 		int familywiththree = 0;
 		int familywithmore = 0;
+		double z;
 		double avrage = 0.0;
 		for (int index = 0; index < T ; index++) {
-			double z = generator.nextDouble();
 			String s = "";
 			boolean boy = false;
 			boolean girl = false;
 			while (!(boy==true&&girl==true)) {
 				avrage++; 
-				if (z >= 0.5) { s = s +"b "; 
+				z = generator.nextDouble();
+				if (z >= 0.5) {
+					s = s +"b "; 
 					boy = true;
 				} else {
 					s = s + "g "; 
 					girl = true; 
 				}
-				z = generator.nextDouble();
 			}
 			int x = s.length()/2;
 			if (x == 2) {
