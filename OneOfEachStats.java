@@ -49,6 +49,12 @@ public class OneOfEachStats {
 		System.out.println("Number of families with 2 children: " + familywithtwo);
 		System.out.println("Number of families with 3 children: " + familywiththree);
 		System.out.println("Number of families with 4 or more children: " + familywithmore);
+		if (familywithtwo > familywithmore && familywithtwo > familywiththree)
+		System.out.println("The most common number of children is 2.");
+		if (familywiththree > familywithmore && familywiththree > familywithtwo)
+		System.out.println("The most common number of children is 3.");
+		if (familywithmore > familywithtwo && familywithmore > familywithtwo)
+		System.out.println("The most common number of children is 4 or more.");
 		} 
 		//// In the previous version of this program, you used a statement like:
 		//// double rnd = Math.random();
