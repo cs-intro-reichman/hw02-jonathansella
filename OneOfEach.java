@@ -1,3 +1,13 @@
+/*
+#feedback
+1. Try to concider next time a redundant version, for instance:
+	double p = Math.random();
+ 	if p>0.5 -> boy
+  	else -> girl
+   this would make your code much shorter and more readable and save your time to think on another logic and use cases.
+*/
+
+
 class OneOfEach {
 	public static void main (String[] args) {
 		double b = Math.random();
